@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".email_verification"
+    android:background="#fff">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_verifiactionemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imageView_back_email_verification"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                />
+            <TextView
+                android:id="@+id/tilte_emailveification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Emai Verification"
+                android:textColor="#000080"
+                android:textSize="25dp"
+                android:layout_marginLeft="30dp"
+                />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layout_verification"
+        android:layout_below="@+id/toolbar_verifiactionemail">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="170dp"
+            android:src="@drawable/ic_verified_user_black_24dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="start|top"
+            android:textColor="#ff00"
+            android:text="We send a link for verification of your give email. you need to click on the link and verify your email, after verifying from emai click on verify button"
+            android:inputType="textMultiLine" />
+
+    </LinearLayout>
+        <TextView
+            android:id="@+id/send_email_verification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000080"
+            android:text="Send email"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:layout_below="@+id/layout_verification"
+            android:gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:padding="10dp"
+            android:enabled="true"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:id="@+id/verified"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#008000"
+            android:layout_below="@+id/layout_verification"
+            android:layout_marginTop="150dp"
+            android:visibility="invisible"
+            android:text="email is send to your email"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/resend_email_verification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resend email?"
+            android:textSize="15dp"
+            android:layout_below="@+id/layout_verification"
+            android:layout_marginTop="90dp"
+            android:textColor="#000"
+            android:gravity="center"
+
+            />
+
+        <TextView
+            android:id="@+id/verify_email_verification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000080"
+            android:text="Verify"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:layout_below="@+id/layout_verification"
+            android:gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:padding="10dp"
+            android:enabled="false"
+            android:visibility="invisible"
+            android:layout_marginTop="20dp"
+
+            />
+
+
+
+
+
+</RelativeLayout>

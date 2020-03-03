@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_today"
+        android:icon="@drawable/ic_today_black_24dp"
+        android:title="Today" />
+
+    <item
+        android:id="@+id/navigation_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Search" />
+
+    <item
+        android:id="@+id/navigation_patient"
+        android:icon="@drawable/ic_local_hospital_black_24dp"
+        android:title="Patient" />
+    <item
+        android:id="@+id/navigation_request"
+        android:icon="@drawable/ic_add_to_queue_black_24dp"
+        android:title="Confirm Requests" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="Profile" />
+
+
+</menu>

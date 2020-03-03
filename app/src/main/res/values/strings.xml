@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Clinic</string>
+
+    <string name="title_activity_signupactivity">signupactivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

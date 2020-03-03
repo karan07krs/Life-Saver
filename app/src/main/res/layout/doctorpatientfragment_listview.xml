@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#000"
+    app:cardBackgroundColor="#fff"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="15dp">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/outer_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Patient Name"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Patient Email"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Slot"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/patientlist_doctorname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doctor Name"
+                android:textColor="#000"
+
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/patientlist_doctoremial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paient name"
+                android:textColor="#000"
+
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/patientlist_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textColor="#000"
+
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/patientlist_slot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Slot"
+                android:textColor="#000"
+
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/confirm_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#000080"
+            android:text="Confirm"
+
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/outer_linear"
+            android:padding="8dp"
+            />
+
+
+
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>

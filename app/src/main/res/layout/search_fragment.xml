@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#fff" android:layout_height="match_parent">
+
+
+    <LinearLayout
+    android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#fff"
+            app:cardElevation="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <EditText
+            android:id="@+id/searchtext"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_edittext"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_marginRight="6dp"
+            android:hint="    Search"
+
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:textColorHint="#808080"
+
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/searchbutt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:srcCompat="@drawable/ic_search_black_24dp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/no_search_webview"
+        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+
+        android:inputType="textPersonName"
+        android:ems="10"
+       android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:textSize="15dp"
+
+        android:text="        NO SEARCH,PLEASE SEARCH" />
+
+
+</RelativeLayout>
